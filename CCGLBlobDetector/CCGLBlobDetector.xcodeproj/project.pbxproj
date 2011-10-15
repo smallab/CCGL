@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		565FEC6407B17BE200C4E23A /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3407B1797F00C4E23A /* MainMenu.nib */; };
+		565FEC6507B17BE300C4E23A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3607B1797F00C4E23A /* InfoPlist.strings */; };
+		E0195B64140C2A9B00C7C5BD /* CCGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0195B62140C2A9B00C7C5BD /* CCGLView.mm */; };
+		E0195B65140C2A9B00C7C5BD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0195B63140C2A9B00C7C5BD /* main.mm */; };
+		E05E3639131FED77002C53B5 /* MyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E05E3638131FED77002C53B5 /* MyController.mm */; };
+		E082CA4613551B6300F14EC8 /* MyCinderGLDrawing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */; };
+		E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */; };
+		E0CBCEDD12A73F3100354DD6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCECE12A73F3100354DD6 /* Accelerate.framework */; };
+		E0CBCEDE12A73F3100354DD6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCECF12A73F3100354DD6 /* AudioToolbox.framework */; };
+		E0CBCEDF12A73F3100354DD6 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED012A73F3100354DD6 /* AudioUnit.framework */; };
+		E0CBCEE012A73F3100354DD6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED112A73F3100354DD6 /* CoreAudio.framework */; };
+		E0CBCEE112A73F3100354DD6 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED212A73F3100354DD6 /* ApplicationServices.framework */; };
+		E0CBCEE212A73F3100354DD6 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED312A73F3100354DD6 /* QuickTime.framework */; };
+		E0CBCEE312A73F3100354DD6 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED412A73F3100354DD6 /* QTKit.framework */; };
+		E0CBCEE412A73F3100354DD6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED512A73F3100354DD6 /* CoreVideo.framework */; };
+		E0CBCEE512A73F3100354DD6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED612A73F3100354DD6 /* Carbon.framework */; };
+		E0CBCEE612A73F3100354DD6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED712A73F3100354DD6 /* OpenGL.framework */; };
+		E0CBCEE712A73F3200354DD6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED812A73F3100354DD6 /* Cocoa.framework */; };
+		E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDB12A73F3100354DD6 /* CoreData.framework */; };
+		E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDC12A73F3100354DD6 /* Foundation.framework */; };
+		E0EC3B76140EA66A00FC2C4B /* libcinder_d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EC3B74140EA66A00FC2C4B /* libcinder_d.a */; };
+		E0EC3B77140EA66A00FC2C4B /* libcinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EC3B75140EA66A00FC2C4B /* libcinder.a */; };
+		E6BA5BD313E23DC100DD26BE /* Camera.icns in Resources */ = {isa = PBXBuildFile; fileRef = E6BA5BD213E23DC100DD26BE /* Camera.icns */; };
+		E6BA5BD813E245E800DD26BE /* CCGLBlobDetector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6BA5BD713E245E800DD26BE /* CCGLBlobDetector-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		565FEC3507B1797F00C4E23A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		565FEC3707B1797F00C4E23A /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0195B61140C2A9B00C7C5BD /* CCGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLView.h; sourceTree = "<group>"; };
+		E0195B62140C2A9B00C7C5BD /* CCGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCGLView.mm; sourceTree = "<group>"; };
+		E0195B63140C2A9B00C7C5BD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		E05E3637131FED77002C53B5 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
+		E05E3638131FED77002C53B5 /* MyController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyController.mm; sourceTree = "<group>"; };
+		E082CA4013551AD600F14EC8 /* CCGLBlobDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGLBlobDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		E0B57C12131DD62E0044F1D0 /* MyCinderGLDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCinderGLDrawing.h; sourceTree = "<group>"; };
+		E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCinderGLDrawing.mm; sourceTree = "<group>"; };
+		E0CBCECE12A73F3100354DD6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E0CBCECF12A73F3100354DD6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E0CBCED012A73F3100354DD6 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		E0CBCED112A73F3100354DD6 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E0CBCED212A73F3100354DD6 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		E0CBCED312A73F3100354DD6 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		E0CBCED412A73F3100354DD6 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		E0CBCED512A73F3100354DD6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		E0CBCED612A73F3100354DD6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		E0CBCED712A73F3100354DD6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		E0CBCED812A73F3100354DD6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		E0CBCEDB12A73F3100354DD6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		E0CBCEDC12A73F3100354DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		E0EC3B74140EA66A00FC2C4B /* libcinder_d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder_d.a; path = ../../lib/libcinder_d.a; sourceTree = "<group>"; };
+		E0EC3B75140EA66A00FC2C4B /* libcinder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder.a; path = ../../lib/libcinder.a; sourceTree = "<group>"; };
+		E0EC3B7B140EA80000FC2C4B /* CinderOpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CinderOpenCV.h; path = ../../blocks/opencv/include/CinderOpenCV.h; sourceTree = "<group>"; };
+		E6BA5BD213E23DC100DD26BE /* Camera.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Camera.icns; sourceTree = "<group>"; };
+		E6BA5BD713E245E800DD26BE /* CCGLBlobDetector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CCGLBlobDetector-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		565FEC4907B179BA00C4E23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0CBCEDD12A73F3100354DD6 /* Accelerate.framework in Frameworks */,
+				E0CBCEDE12A73F3100354DD6 /* AudioToolbox.framework in Frameworks */,
+				E0CBCEDF12A73F3100354DD6 /* AudioUnit.framework in Frameworks */,
+				E0CBCEE012A73F3100354DD6 /* CoreAudio.framework in Frameworks */,
+				E0CBCEE112A73F3100354DD6 /* ApplicationServices.framework in Frameworks */,
+				E0CBCEE212A73F3100354DD6 /* QuickTime.framework in Frameworks */,
+				E0CBCEE312A73F3100354DD6 /* QTKit.framework in Frameworks */,
+				E0CBCEE412A73F3100354DD6 /* CoreVideo.framework in Frameworks */,
+				E0CBCEE512A73F3100354DD6 /* Carbon.framework in Frameworks */,
+				E0CBCEE612A73F3100354DD6 /* OpenGL.framework in Frameworks */,
+				E0CBCEE712A73F3200354DD6 /* Cocoa.framework in Frameworks */,
+				E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */,
+				E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */,
+				E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */,
+				E0EC3B76140EA66A00FC2C4B /* libcinder_d.a in Frameworks */,
+				E0EC3B77140EA66A00FC2C4B /* libcinder.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		565FEC2007B1792E00C4E23A = {
+			isa = PBXGroup;
+			children = (
+				E6BA5BC913E2182C00DD26BE /* Blocks */,
+				565FEC2F07B1794500C4E23A /* Assets */,
+				565FEC2D07B1793B00C4E23A /* MyClasses */,
+				565FEC2E07B1794000C4E23A /* CCGLCore */,
+				565FEC3007B1794A00C4E23A /* Frameworks */,
+				565FEC4C07B179BA00C4E23A /* Products */,
+				E6BA5BD713E245E800DD26BE /* CCGLBlobDetector-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		565FEC2D07B1793B00C4E23A /* MyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E05E3637131FED77002C53B5 /* MyController.h */,
+				E05E3638131FED77002C53B5 /* MyController.mm */,
+				E0B57C12131DD62E0044F1D0 /* MyCinderGLDrawing.h */,
+				E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */,
+			);
+			name = MyClasses;
+			sourceTree = "<group>";
+		};
+		565FEC2E07B1794000C4E23A /* CCGLCore */ = {
+			isa = PBXGroup;
+			children = (
+				E0195B61140C2A9B00C7C5BD /* CCGLView.h */,
+				E0195B62140C2A9B00C7C5BD /* CCGLView.mm */,
+				E0195B63140C2A9B00C7C5BD /* main.mm */,
+			);
+			name = CCGLCore;
+			sourceTree = "<group>";
+		};
+		565FEC2F07B1794500C4E23A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				565FEC3407B1797F00C4E23A /* MainMenu.nib */,
+				E6BA5BD213E23DC100DD26BE /* Camera.icns */,
+				565FEC3607B1797F00C4E23A /* InfoPlist.strings */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		565FEC3007B1794A00C4E23A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0EC3B75140EA66A00FC2C4B /* libcinder.a */,
+				E0EC3B74140EA66A00FC2C4B /* libcinder_d.a */,
+				E0CBCECD12A73F3100354DD6 /* Linked Frameworks */,
+				E0CBCED912A73F3100354DD6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		565FEC4C07B179BA00C4E23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E082CA4013551AD600F14EC8 /* CCGLBlobDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0CBCECD12A73F3100354DD6 /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0CBCECE12A73F3100354DD6 /* Accelerate.framework */,
+				E0CBCECF12A73F3100354DD6 /* AudioToolbox.framework */,
+				E0CBCED012A73F3100354DD6 /* AudioUnit.framework */,
+				E0CBCED112A73F3100354DD6 /* CoreAudio.framework */,
+				E0CBCED212A73F3100354DD6 /* ApplicationServices.framework */,
+				E0CBCED312A73F3100354DD6 /* QuickTime.framework */,
+				E0CBCED412A73F3100354DD6 /* QTKit.framework */,
+				E0CBCED512A73F3100354DD6 /* CoreVideo.framework */,
+				E0CBCED612A73F3100354DD6 /* Carbon.framework */,
+				E0CBCED712A73F3100354DD6 /* OpenGL.framework */,
+				E0CBCED812A73F3100354DD6 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		E0CBCED912A73F3100354DD6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */,
+				E0CBCEDB12A73F3100354DD6 /* CoreData.framework */,
+				E0CBCEDC12A73F3100354DD6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E6BA5BC913E2182C00DD26BE /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				E6BA5BCB13E2184F00DD26BE /* OpenCV */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		E6BA5BCB13E2184F00DD26BE /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				E6BA5BCC13E2185700DD26BE /* include */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		E6BA5BCC13E2185700DD26BE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E0EC3B7B140EA80000FC2C4B /* CinderOpenCV.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		565FEC4A07B179BA00C4E23A /* CCGLBlobDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EC255408BBC88B006E9215 /* Build configuration list for PBXNativeTarget "CCGLBlobDetector" */;
+			buildPhases = (
+				565FEC4707B179BA00C4E23A /* Resources */,
+				565FEC4807B179BA00C4E23A /* Sources */,
+				565FEC4907B179BA00C4E23A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCGLBlobDetector;
+			productName = CocoaGL;
+			productReference = E082CA4013551AD600F14EC8 /* CCGLBlobDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		565FEC2407B1792E00C4E23A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = SMALLAB.ORG;
+			};
+			buildConfigurationList = F0EC255808BBC88B006E9215 /* Build configuration list for PBXProject "CCGLBlobDetector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 565FEC2007B1792E00C4E23A;
+			productRefGroup = 565FEC4C07B179BA00C4E23A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				565FEC4A07B179BA00C4E23A /* CCGLBlobDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		565FEC4707B179BA00C4E23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565FEC6407B17BE200C4E23A /* MainMenu.nib in Resources */,
+				565FEC6507B17BE300C4E23A /* InfoPlist.strings in Resources */,
+				E6BA5BD313E23DC100DD26BE /* Camera.icns in Resources */,
+				E6BA5BD813E245E800DD26BE /* CCGLBlobDetector-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		565FEC4807B179BA00C4E23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E05E3639131FED77002C53B5 /* MyController.mm in Sources */,
+				E082CA4613551B6300F14EC8 /* MyCinderGLDrawing.mm in Sources */,
+				E0195B64140C2A9B00C7C5BD /* CCGLView.mm in Sources */,
+				E0195B65140C2A9B00C7C5BD /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		565FEC3407B1797F00C4E23A /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565FEC3507B1797F00C4E23A /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = SOURCE_ROOT;
+		};
+		565FEC3607B1797F00C4E23A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565FEC3707B1797F00C4E23A /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0EC255508BBC88B006E9215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "CCGLBlobDetector-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib\"",
+					"\"$(SRCROOT)/../../lib/macosx\"",
+				);
+				PRODUCT_NAME = CCGLBlobDetector;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		F0EC255608BBC88B006E9215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH = ../..;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "CCGLBlobDetector-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib\"",
+					"\"$(SRCROOT)/../../lib/macosx\"",
+				);
+				PRODUCT_NAME = CCGLBlobDetector;
+				ZERO_LINK = "";
+			};
+			name = Release;
+		};
+		F0EC255908BBC88B006E9215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH = ../..;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(CINDER_PATH)/include",
+					"$(CINDER_PATH)/boost",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					"$(CINDER_PATH)/blocks/opencv/lib/macosx/libcv.a",
+					"$(CINDER_PATH)/blocks/opencv/lib/macosx/libcxcore.a",
+				);
+				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include $(CINDER_PATH)/boost";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		F0EC255A08BBC88B006E9215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH = ../..;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(CINDER_PATH)/include",
+					"$(CINDER_PATH)/boost",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					"$(CINDER_PATH)/blocks/opencv/lib/macosx/libcv.a",
+					"$(CINDER_PATH)/blocks/opencv/lib/macosx/libcxcore.a",
+				);
+				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include $(CINDER_PATH)/boost";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0EC255408BBC88B006E9215 /* Build configuration list for PBXNativeTarget "CCGLBlobDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EC255508BBC88B006E9215 /* Debug */,
+				F0EC255608BBC88B006E9215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0EC255808BBC88B006E9215 /* Build configuration list for PBXProject "CCGLBlobDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EC255908BBC88B006E9215 /* Debug */,
+				F0EC255A08BBC88B006E9215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 565FEC2407B1792E00C4E23A /* Project object */;
+}

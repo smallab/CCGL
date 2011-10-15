@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	565FEC2407B1792E00C4E23A /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = E082CA4113551AD600F14EC8 /* CocoaCinderGL */;
+		activeTarget = 565FEC4A07B179BA00C4E23A /* CocoaCinderGL */;
+		addToTargets = (
+			565FEC4A07B179BA00C4E23A /* CocoaCinderGL */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = E0D6F7D712A68A1E00EEA70A /* Code sense */;
+		executables = (
+			E082CA4113551AD600F14EC8 /* CocoaCinderGL */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					692,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					652,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 324353043;
+			PBXWorkspaceStateSaveDate = 324353043;
+		};
+		perUserProjectItems = {
+			E01EB3B4132123440071CD81 /* PBXTextBookmark */ = E01EB3B4132123440071CD81 /* PBXTextBookmark */;
+			E01EB3D1132131280071CD81 /* PBXTextBookmark */ = E01EB3D1132131280071CD81 /* PBXTextBookmark */;
+			E03B423E13553D6C00273A70 /* PBXTextBookmark */ = E03B423E13553D6C00273A70 /* PBXTextBookmark */;
+			E082CA6213552D7100F14EC8 /* PlistBookmark */ = E082CA6213552D7100F14EC8 /* PlistBookmark */;
+			E082CA6513552D7100F14EC8 /* PBXTextBookmark */ = E082CA6513552D7100F14EC8 /* PBXTextBookmark */;
+			E082CA6613552D7100F14EC8 /* PBXTextBookmark */ = E082CA6613552D7100F14EC8 /* PBXTextBookmark */;
+			E082CA7F13552FBD00F14EC8 /* PBXTextBookmark */ = E082CA7F13552FBD00F14EC8 /* PBXTextBookmark */;
+			E082CAAD1355396E00F14EC8 /* PBXTextBookmark */ = E082CAAD1355396E00F14EC8 /* PBXTextBookmark */;
+			E082CAAE1355396E00F14EC8 /* PBXTextBookmark */ = E082CAAE1355396E00F14EC8 /* PBXTextBookmark */;
+			E082CAAF1355396E00F14EC8 /* PBXTextBookmark */ = E082CAAF1355396E00F14EC8 /* PBXTextBookmark */;
+			E082CAB01355396E00F14EC8 /* PBXTextBookmark */ = E082CAB01355396E00F14EC8 /* PBXTextBookmark */;
+			E082CAC513553B4100F14EC8 /* PBXTextBookmark */ = E082CAC513553B4100F14EC8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = E0D6F7D612A68A1E00EEA70A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	565FEC3107B1796900C4E23A /* MyCinderGLView.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {957, 6721}}";
+			sepNavSelRange = "{17, 0}";
+			sepNavVisRange = "{0, 1655}";
+		};
+	};
+	565FEC3207B1796900C4E23A /* MyCinderGLView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1265, 1222}}";
+			sepNavSelRange = "{561, 0}";
+			sepNavVisRange = "{652, 2461}";
+			sepNavWindowFrame = "{{55, 8}, {1187, 865}}";
+		};
+	};
+	565FEC3307B1797000C4E23A /* main.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {870, 532}}";
+			sepNavSelRange = "{110, 0}";
+			sepNavVisRange = "{0, 110}";
+		};
+	};
+	565FEC3707B1797F00C4E23A /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {915, 532}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 472}";
+		};
+	};
+	565FEC4A07B179BA00C4E23A /* CocoaCinderGL */ = {
+		activeExec = 0;
+		executables = (
+			E082CA4113551AD600F14EC8 /* CocoaCinderGL */,
+		);
+	};
+	565FEC4E07B179BA00C4E23A /* CocoaCinderGL-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{41, 0}, {1493, 856}}";
+		};
+	};
+	E01EB3A41321232A0071CD81 /* AppBasic.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AppBasic.h;
+		path = "/Users/msavary/Documents/C++/Cinder/include/cinder/app/AppBasic.h";
+		sourceTree = "<absolute>";
+	};
+	E01EB3B4132123440071CD81 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E01EB3A41321232A0071CD81 /* AppBasic.h */;
+		name = "AppBasic.h: 6";
+		rLen = 0;
+		rLoc = 198;
+		rType = 0;
+		vrLen = 2326;
+		vrLoc = 0;
+	};
+	E01EB3D1132131280071CD81 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E01EB3D2132131280071CD81 /* CinderView.mm */;
+		name = "CinderView.mm: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2140;
+		vrLoc = 0;
+	};
+	E01EB3D2132131280071CD81 /* CinderView.mm */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.objcpp;
+		name = CinderView.mm;
+		path = "/Users/msavary/Documents/C++/Cinder/src/cinder/app/CinderView.mm";
+		sourceTree = "<absolute>";
+	};
+	E03B423E13553D6C00273A70 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */;
+		name = "MyCinderGLDrawing.mm: 21";
+		rLen = 0;
+		rLoc = 475;
+		rType = 0;
+		vrLen = 1212;
+		vrLoc = 122;
+	};
+	E05E3637131FED77002C53B5 /* MyController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {870, 532}}";
+			sepNavSelRange = "{276, 0}";
+			sepNavVisRange = "{0, 303}";
+		};
+	};
+	E05E3638131FED77002C53B5 /* MyController.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1338, 512}}";
+			sepNavSelRange = "{295, 0}";
+			sepNavVisRange = "{0, 339}";
+			sepNavWindowFrame = "{{41, 0}, {1493, 856}}";
+		};
+	};
+	E082CA4113551AD600F14EC8 /* CocoaCinderGL */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CocoaCinderGL;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	E082CA6213552D7100F14EC8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 565FEC4E07B179BA00C4E23A /* CocoaCinderGL-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/msavary/Documents/Objective-C/CocoaCinderGL/CocoaCinderGL-Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	E082CA6513552D7100F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 565FEC3207B1796900C4E23A /* MyCinderGLView.h */;
+		name = "MyCinderGLView.h: 24";
+		rLen = 0;
+		rLoc = 561;
+		rType = 0;
+		vrLen = 2461;
+		vrLoc = 652;
+	};
+	E082CA6613552D7100F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 565FEC3107B1796900C4E23A /* MyCinderGLView.mm */;
+		name = "MyCinderGLView.mm: 1";
+		rLen = 0;
+		rLoc = 17;
+		rType = 0;
+		vrLen = 1655;
+		vrLoc = 0;
+	};
+	E082CA7F13552FBD00F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E05E3638131FED77002C53B5 /* MyController.mm */;
+		name = "MyController.mm: 17";
+		rLen = 0;
+		rLoc = 295;
+		rType = 0;
+		vrLen = 339;
+		vrLoc = 0;
+	};
+	E082CAAD1355396E00F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E0B57C12131DD62E0044F1D0 /* MyCinderGLDrawing.h */;
+		name = "MyCinderGLDrawing.h: 10";
+		rLen = 0;
+		rLoc = 168;
+		rType = 0;
+		vrLen = 323;
+		vrLoc = 0;
+	};
+	E082CAAE1355396E00F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 565FEC3707B1797F00C4E23A /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 472;
+		vrLoc = 0;
+	};
+	E082CAAF1355396E00F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E05E3637131FED77002C53B5 /* MyController.h */;
+		name = "MyController.h: 16";
+		rLen = 0;
+		rLoc = 276;
+		rType = 0;
+		vrLen = 303;
+		vrLoc = 0;
+	};
+	E082CAB01355396E00F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 565FEC3307B1797000C4E23A /* main.mm */;
+		name = "main.mm: 7";
+		rLen = 0;
+		rLoc = 110;
+		rType = 0;
+		vrLen = 110;
+		vrLoc = 0;
+	};
+	E082CAC513553B4100F14EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */;
+		name = "MyCinderGLDrawing.mm: 21";
+		rLen = 0;
+		rLoc = 475;
+		rType = 0;
+		vrLen = 1210;
+		vrLoc = 124;
+	};
+	E0B57C12131DD62E0044F1D0 /* MyCinderGLDrawing.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {870, 774}}";
+			sepNavSelRange = "{168, 0}";
+			sepNavVisRange = "{0, 323}";
+		};
+	};
+	E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {870, 1833}}";
+			sepNavSelRange = "{475, 0}";
+			sepNavVisRange = "{122, 1212}";
+			sepNavWindowFrame = "{{41, 0}, {1493, 856}}";
+		};
+	};
+	E0D6F7D612A68A1E00EEA70A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	E0D6F7D712A68A1E00EEA70A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

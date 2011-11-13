@@ -281,8 +281,8 @@
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
 				PRODUCT_NAME = CCGLBasic;
 				ZERO_LINK = YES;
@@ -303,8 +303,8 @@
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
 				PRODUCT_NAME = CCGLBasic;
 				ZERO_LINK = "";

@@ -67,7 +67,8 @@
         
         // Contours lists
         mCvContours.clear();
-        for (int i=0; i<mLevels; i++) {
+        for (int i=0; i<mLevels; i++)
+        {
             // Threshold
             cv::Mat threshold(cv::Size(mWidth, mHeight), CV_8U);
             cv::threshold(blur, threshold, (int) i*(254.0f/mLevels), (int) i*(254.0f/mLevels), CV_8U);
@@ -91,14 +92,16 @@
     glTranslatef( Vec3f( -mWidth/2.0f, -mHeight/2.0f, 0.0f ) );
     
     // draw the capture
-    if( mTexture && mDrawCapture ) {
+    if( mTexture && mDrawCapture )
+    {
         glTranslatef( Vec3f( 0.0f, 0.0f, -1.0f ) );
         gl::draw( mTexture );
         glTranslatef( Vec3f( 0.0f, 0.0f, 1.0f ) );
     }
     
     // show the contours
-    for (int i=0; i<mCvContours.size(); i++) {
+    for (int i=0; i<mCvContours.size(); i++)
+    {
         // apply 3D effect to blobs if any of both
         glPushMatrix();
         glTranslatef( Vec3f( 0.0f, 0.0f, m3D*(i) ) );
@@ -110,7 +113,8 @@
         
         // write blobs as GL line loops
         std::vector< std::vector<cv::Point> > contours = mCvContours.at(i);
-        for (vector< vector<cv::Point> >::iterator iter = contours.begin(); iter!=contours.end(); ++iter) {
+        for (vector< vector<cv::Point> >::iterator iter = contours.begin(); iter!=contours.end(); ++iter)
+        {
             glBegin( GL_LINE_LOOP );
             for( vector<cv::Point>::iterator edge = iter->begin(); edge != iter->end(); ++edge ) {
                 //gl::color( Color( CM_HSV, 0.2f, 0.3f, Rand::randFloat(1.0f) ) );

@@ -27,7 +27,6 @@
 		E0CBCEE712A73F3200354DD6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED812A73F3100354DD6 /* Cocoa.framework */; };
 		E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDB12A73F3100354DD6 /* CoreData.framework */; };
 		E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDC12A73F3100354DD6 /* Foundation.framework */; };
-		E0CBD4E112A75DB500354DD6 /* libcinder_d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBD4E012A75DB500354DD6 /* libcinder_d.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +55,6 @@
 		E0CBCED812A73F3100354DD6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E0CBCEDB12A73F3100354DD6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		E0CBCEDC12A73F3100354DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		E0CBD4E012A75DB500354DD6 /* libcinder_d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder_d.a; path = "../../C++/Cinder/lib/libcinder_d.a"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,6 @@
 				E0CBCEE712A73F3200354DD6 /* Cocoa.framework in Frameworks */,
 				E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */,
 				E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */,
-				E0CBD4E112A75DB500354DD6 /* libcinder_d.a in Frameworks */,
 				E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +127,6 @@
 		565FEC3007B1794A00C4E23A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0CBD4E012A75DB500354DD6 /* libcinder_d.a */,
 				E0CBCECD12A73F3100354DD6 /* Linked Frameworks */,
 				E0CBCED912A73F3100354DD6 /* Other Frameworks */,
 			);
@@ -279,10 +275,10 @@
 				INFOPLIST_FILE = "CCGLLights-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
 				PRODUCT_NAME = CCGLLights;
 				ZERO_LINK = YES;
 			};
@@ -301,10 +297,10 @@
 				INFOPLIST_FILE = "CCGLLights-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
 				PRODUCT_NAME = CCGLLights;
 				ZERO_LINK = "";
 			};

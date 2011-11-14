@@ -27,8 +27,6 @@
 		E0CBCEE712A73F3200354DD6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED812A73F3100354DD6 /* Cocoa.framework */; };
 		E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDB12A73F3100354DD6 /* CoreData.framework */; };
 		E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDC12A73F3100354DD6 /* Foundation.framework */; };
-		E0EC3B76140EA66A00FC2C4B /* libcinder_d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EC3B74140EA66A00FC2C4B /* libcinder_d.a */; };
-		E0EC3B77140EA66A00FC2C4B /* libcinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EC3B75140EA66A00FC2C4B /* libcinder.a */; };
 		E6BA5BD313E23DC100DD26BE /* Camera.icns in Resources */ = {isa = PBXBuildFile; fileRef = E6BA5BD213E23DC100DD26BE /* Camera.icns */; };
 		E6BA5BD813E245E800DD26BE /* CCGLBlobDetector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6BA5BD713E245E800DD26BE /* CCGLBlobDetector-Info.plist */; };
 /* End PBXBuildFile section */
@@ -58,8 +56,6 @@
 		E0CBCED812A73F3100354DD6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E0CBCEDB12A73F3100354DD6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		E0CBCEDC12A73F3100354DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		E0EC3B74140EA66A00FC2C4B /* libcinder_d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder_d.a; path = ../../lib/libcinder_d.a; sourceTree = "<group>"; };
-		E0EC3B75140EA66A00FC2C4B /* libcinder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder.a; path = ../../lib/libcinder.a; sourceTree = "<group>"; };
 		E0EC3B7B140EA80000FC2C4B /* CinderOpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CinderOpenCV.h; path = ../../blocks/opencv/include/CinderOpenCV.h; sourceTree = "<group>"; };
 		E6BA5BD213E23DC100DD26BE /* Camera.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Camera.icns; sourceTree = "<group>"; };
 		E6BA5BD713E245E800DD26BE /* CCGLBlobDetector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CCGLBlobDetector-Info.plist"; sourceTree = "<group>"; };
@@ -84,8 +80,6 @@
 				E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */,
 				E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */,
 				E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */,
-				E0EC3B76140EA66A00FC2C4B /* libcinder_d.a in Frameworks */,
-				E0EC3B77140EA66A00FC2C4B /* libcinder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +133,6 @@
 		565FEC3007B1794A00C4E23A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0EC3B75140EA66A00FC2C4B /* libcinder.a */,
-				E0EC3B74140EA66A00FC2C4B /* libcinder_d.a */,
 				E0CBCECD12A73F3100354DD6 /* Linked Frameworks */,
 				E0CBCED912A73F3100354DD6 /* Other Frameworks */,
 			);

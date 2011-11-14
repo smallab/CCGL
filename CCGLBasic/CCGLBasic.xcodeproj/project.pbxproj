@@ -10,7 +10,6 @@
 		565FEC5007B179CE00C4E23A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 565FEC3307B1797000C4E23A /* main.mm */; };
 		565FEC6407B17BE200C4E23A /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3407B1797F00C4E23A /* MainMenu.nib */; };
 		565FEC6507B17BE300C4E23A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3607B1797F00C4E23A /* InfoPlist.strings */; };
-		E01CBA30140EA35E003F7E2E /* libcinder_d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E01CBA2F140EA35E003F7E2E /* libcinder_d.a */; };
 		E05E3639131FED77002C53B5 /* MyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E05E3638131FED77002C53B5 /* MyController.mm */; };
 		E082CA4613551B6300F14EC8 /* MyCinderGLDrawing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */; };
 		E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */; };
@@ -35,7 +34,6 @@
 		565FEC3507B1797F00C4E23A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		565FEC3707B1797F00C4E23A /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		565FEC4E07B179BA00C4E23A /* CCGLBasic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCGLBasic-Info.plist"; sourceTree = "<group>"; };
-		E01CBA2F140EA35E003F7E2E /* libcinder_d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder_d.a; path = ../../lib/libcinder_d.a; sourceTree = "<group>"; };
 		E05E3637131FED77002C53B5 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
 		E05E3638131FED77002C53B5 /* MyController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyController.mm; sourceTree = "<group>"; };
 		E082CA4013551AD600F14EC8 /* CCGLBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGLBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +76,6 @@
 				E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */,
 				E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */,
 				E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */,
-				E01CBA30140EA35E003F7E2E /* libcinder_d.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +127,6 @@
 		565FEC3007B1794A00C4E23A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E01CBA2F140EA35E003F7E2E /* libcinder_d.a */,
 				E0CBCECD12A73F3100354DD6 /* Linked Frameworks */,
 				E0CBCED912A73F3100354DD6 /* Other Frameworks */,
 			);
@@ -284,6 +280,7 @@
 					"\"$(CINDER_PATH)/lib\"",
 					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
 				PRODUCT_NAME = CCGLBasic;
 				ZERO_LINK = YES;
 			};
@@ -306,6 +303,7 @@
 					"\"$(CINDER_PATH)/lib\"",
 					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
 				PRODUCT_NAME = CCGLBasic;
 				ZERO_LINK = "";
 			};

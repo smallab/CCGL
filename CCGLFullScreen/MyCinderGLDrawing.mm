@@ -42,10 +42,9 @@
 	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
     
     // draw a rotating cube
-    gl::color(  ColorA(1, 0, 0, 0.90f)  );
 	glPushMatrix();
     glRotatef(10.0f * frameCount, 0.0f, 1.0f, 0.0f);
-	gl::drawCube( Vec3f(0.0f, 0.0f, 0.0f), Vec3f(50.0f, 50.0f, 50.0f) );
+	gl::drawColorCube( Vec3f(0.0f, 0.0f, 0.0f), Vec3f(50.0f, 50.0f, 50.0f) );
 	glPopMatrix();
 }
 

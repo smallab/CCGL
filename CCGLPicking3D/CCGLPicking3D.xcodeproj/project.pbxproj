@@ -297,10 +297,10 @@
 				INFOPLIST_FILE = "CCGLPicking3D-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
 				PRODUCT_NAME = CCGLPicking3D;
 				ZERO_LINK = YES;
 			};
@@ -319,10 +319,10 @@
 				INFOPLIST_FILE = "CCGLPicking3D-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 				);
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
 				PRODUCT_NAME = CCGLPicking3D;
 				ZERO_LINK = "";
 			};

@@ -10,7 +10,6 @@
 		565FEC5007B179CE00C4E23A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 565FEC3307B1797000C4E23A /* main.mm */; };
 		565FEC6407B17BE200C4E23A /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3407B1797F00C4E23A /* MainMenu.nib */; };
 		565FEC6507B17BE300C4E23A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3607B1797F00C4E23A /* InfoPlist.strings */; };
-		E003BC47140B556500C3C049 /* libcinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E003BC46140B556500C3C049 /* libcinder.a */; };
 		E03C927B139FB53700D8EBB1 /* OscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E03C9277139FB53700D8EBB1 /* OscBundle.cpp */; };
 		E03C927C139FB53700D8EBB1 /* OscListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E03C9278139FB53700D8EBB1 /* OscListener.cpp */; };
 		E03C927D139FB53700D8EBB1 /* OscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E03C9279139FB53700D8EBB1 /* OscMessage.cpp */; };
@@ -32,7 +31,6 @@
 		E0CBCEE712A73F3200354DD6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED812A73F3100354DD6 /* Cocoa.framework */; };
 		E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDB12A73F3100354DD6 /* CoreData.framework */; };
 		E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCEDC12A73F3100354DD6 /* Foundation.framework */; };
-		E0CBD4E112A75DB500354DD6 /* libcinder_d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBD4E012A75DB500354DD6 /* libcinder_d.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +38,6 @@
 		565FEC3507B1797F00C4E23A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		565FEC3707B1797F00C4E23A /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		565FEC4E07B179BA00C4E23A /* CCGLOSCBlock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCGLOSCBlock-Info.plist"; sourceTree = "<group>"; };
-		E003BC46140B556500C3C049 /* libcinder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder.a; path = "../../C++/Cinder/lib/libcinder.a"; sourceTree = "<group>"; };
 		E03C9264139FB52500D8EBB1 /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
 		E03C9265139FB52500D8EBB1 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
 		E03C9266139FB52500D8EBB1 /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
@@ -84,7 +81,6 @@
 		E0CBCED812A73F3100354DD6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E0CBCEDB12A73F3100354DD6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		E0CBCEDC12A73F3100354DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		E0CBD4E012A75DB500354DD6 /* libcinder_d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcinder_d.a; path = "../../C++/Cinder/lib/libcinder_d.a"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +101,7 @@
 				E0CBCEE712A73F3200354DD6 /* Cocoa.framework in Frameworks */,
 				E0CBCEE912A73F3200354DD6 /* CoreData.framework in Frameworks */,
 				E0CBCEEA12A73F3200354DD6 /* Foundation.framework in Frameworks */,
-				E0CBD4E112A75DB500354DD6 /* libcinder_d.a in Frameworks */,
 				E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */,
-				E003BC47140B556500C3C049 /* libcinder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +154,6 @@
 		565FEC3007B1794A00C4E23A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E003BC46140B556500C3C049 /* libcinder.a */,
-				E0CBD4E012A75DB500354DD6 /* libcinder_d.a */,
 				E0CBCECD12A73F3100354DD6 /* Linked Frameworks */,
 				E0CBCED912A73F3100354DD6 /* Other Frameworks */,
 			);
@@ -392,9 +384,8 @@
 				INFOPLIST_FILE = "CCGLOSCBlock-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 					"\"$(CINDER_PATH)/blocks/osc/lib/macosx\"",
 				);
 				OTHER_LDFLAGS = (
@@ -421,13 +412,12 @@
 				INFOPLIST_FILE = "CCGLOSCBlock-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../lib\"",
-					"\"$(SRCROOT)/../../lib/macosx\"",
+					"\"$(CINDER_PATH)/lib\"",
+					"\"$(CINDER_PATH)/lib/macosx\"",
 					"\"$(CINDER_PATH)/blocks/osc/lib/macosx\"",
 				);
 				OTHER_LDFLAGS = (
-					"$(CINDER_PATH)/lib/libcinder_d.a",
+					"$(CINDER_PATH)/lib/libcinder.a",
 					"$(CINDER_PATH)/blocks/osc/lib/macosx/osc.a",
 					"-lcurl",
 				);

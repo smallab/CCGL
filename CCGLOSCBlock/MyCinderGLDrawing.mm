@@ -5,7 +5,7 @@
 //  Created by Matthieu Savary on 03/03/11.
 //  Copyright (c) 2011 SMALLAB.ORG. All rights reserved.
 //
-//  More info on the CCGL project >> http://www.smallab.org/code/ccgl/
+//  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
 
@@ -14,7 +14,7 @@
 @implementation MyCinderGLDrawing
 
 /**
- *  The superclass setup method
+ *  The setup method
  */
 
 - (void) setup
@@ -23,7 +23,6 @@
 	
 	// setup our camera
 	CameraPersp cam;
-	/*cam.lookAt( Vec3f( -100, 10, 10 ), Vec3f::zero() );*/
 	cam.setEyePoint( Vec3f(-100.0f, 10.0f, 10.0f) );
 	cam.setCenterOfInterestPoint( Vec3f(0.0f, 0.0f, 0.0f) );
 	cam.setPerspective( 60.0f, [self getWindowAspectRatio], 1.0f, 1000.0f );
@@ -39,7 +38,7 @@
 
 
 /**
- *  The superclass draw loop method
+ *  The draw loop method
  */
 
 - (void) draw

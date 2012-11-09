@@ -8,6 +8,8 @@
 	<array/>
 	<key>CFBundleExecutable</key>
 	<string>CCGLPicking3D</string>
+	<key>CFBundleIconFile</key>
+	<string>cocoacid-icon</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.smallab.CCGLPicking3D</string>
 	<key>CFBundleInfoDictionaryVersion</key>

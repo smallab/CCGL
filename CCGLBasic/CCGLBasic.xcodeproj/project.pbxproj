@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		565FEC5007B179CE00C4E23A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 565FEC3307B1797000C4E23A /* main.mm */; };
+		565FEC5007B179CE00C4E23A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565FEC3307B1797000C4E23A /* main.m */; };
 		565FEC6407B17BE200C4E23A /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3407B1797F00C4E23A /* MainMenu.nib */; };
 		565FEC6507B17BE300C4E23A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3607B1797F00C4E23A /* InfoPlist.strings */; };
+		E047863A164C716C00D9CE9B /* CCGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0478639164C716C00D9CE9B /* CCGLView.mm */; };
+		E0478693164C85CE00D9CE9B /* cocoacid-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E0478692164C85CE00D9CE9B /* cocoacid-icon.icns */; };
 		E05E3639131FED77002C53B5 /* MyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E05E3638131FED77002C53B5 /* MyController.mm */; };
 		E082CA4613551B6300F14EC8 /* MyCinderGLDrawing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */; };
 		E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */; };
-		E0C5A101140AEE7E00453E04 /* CCGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0C5A100140AEE7E00453E04 /* CCGLView.mm */; };
 		E0CBCEDD12A73F3100354DD6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCECE12A73F3100354DD6 /* Accelerate.framework */; };
 		E0CBCEDE12A73F3100354DD6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCECF12A73F3100354DD6 /* AudioToolbox.framework */; };
 		E0CBCEDF12A73F3100354DD6 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CBCED012A73F3100354DD6 /* AudioUnit.framework */; };
@@ -30,18 +31,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		565FEC3307B1797000C4E23A /* main.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		565FEC3307B1797000C4E23A /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		565FEC3507B1797F00C4E23A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		565FEC3707B1797F00C4E23A /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		565FEC4E07B179BA00C4E23A /* CCGLBasic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCGLBasic-Info.plist"; sourceTree = "<group>"; };
+		E0478638164C716C00D9CE9B /* CCGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCGLView.h; path = CCGLCore/CCGLView.h; sourceTree = "<group>"; };
+		E0478639164C716C00D9CE9B /* CCGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCGLView.mm; path = CCGLCore/CCGLView.mm; sourceTree = "<group>"; };
+		E0478692164C85CE00D9CE9B /* cocoacid-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "cocoacid-icon.icns"; sourceTree = "<group>"; };
 		E05E3637131FED77002C53B5 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
 		E05E3638131FED77002C53B5 /* MyController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyController.mm; sourceTree = "<group>"; };
 		E082CA4013551AD600F14EC8 /* CCGLBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGLBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E0B57C12131DD62E0044F1D0 /* MyCinderGLDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCinderGLDrawing.h; sourceTree = "<group>"; };
 		E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCinderGLDrawing.mm; sourceTree = "<group>"; };
-		E0C5A0FF140AEE7E00453E04 /* CCGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLView.h; sourceTree = "<group>"; };
-		E0C5A100140AEE7E00453E04 /* CCGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCGLView.mm; sourceTree = "<group>"; };
 		E0CBCECE12A73F3100354DD6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		E0CBCECF12A73F3100354DD6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E0CBCED012A73F3100354DD6 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
@@ -85,9 +87,11 @@
 		565FEC2007B1792E00C4E23A = {
 			isa = PBXGroup;
 			children = (
-				565FEC2F07B1794500C4E23A /* MyAssets */,
-				565FEC2D07B1793B00C4E23A /* MyClasses */,
+				E0478692164C85CE00D9CE9B /* cocoacid-icon.icns */,
 				565FEC2E07B1794000C4E23A /* CCGLCore */,
+				565FEC2D07B1793B00C4E23A /* MyClasses */,
+				565FEC2F07B1794500C4E23A /* MyAssets */,
+				E0478628164C6EEF00D9CE9B /* Supporting Files */,
 				565FEC3007B1794A00C4E23A /* Frameworks */,
 				565FEC4C07B179BA00C4E23A /* Products */,
 				565FEC4E07B179BA00C4E23A /* CCGLBasic-Info.plist */,
@@ -108,9 +112,8 @@
 		565FEC2E07B1794000C4E23A /* CCGLCore */ = {
 			isa = PBXGroup;
 			children = (
-				E0C5A0FF140AEE7E00453E04 /* CCGLView.h */,
-				E0C5A100140AEE7E00453E04 /* CCGLView.mm */,
-				565FEC3307B1797000C4E23A /* main.mm */,
+				E0478638164C716C00D9CE9B /* CCGLView.h */,
+				E0478639164C716C00D9CE9B /* CCGLView.mm */,
 			);
 			name = CCGLCore;
 			sourceTree = "<group>";
@@ -119,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				565FEC3407B1797F00C4E23A /* MainMenu.nib */,
-				565FEC3607B1797F00C4E23A /* InfoPlist.strings */,
 			);
 			name = MyAssets;
 			sourceTree = "<group>";
@@ -139,6 +141,15 @@
 				E082CA4013551AD600F14EC8 /* CCGLBasic.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E0478628164C6EEF00D9CE9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				565FEC3307B1797000C4E23A /* main.m */,
+				565FEC3607B1797F00C4E23A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E0CBCECD12A73F3100354DD6 /* Linked Frameworks */ = {
@@ -221,6 +232,7 @@
 			files = (
 				565FEC6407B17BE200C4E23A /* MainMenu.nib in Resources */,
 				565FEC6507B17BE300C4E23A /* InfoPlist.strings in Resources */,
+				E0478693164C85CE00D9CE9B /* cocoacid-icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,10 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565FEC5007B179CE00C4E23A /* main.mm in Sources */,
+				565FEC5007B179CE00C4E23A /* main.m in Sources */,
 				E05E3639131FED77002C53B5 /* MyController.mm in Sources */,
 				E082CA4613551B6300F14EC8 /* MyCinderGLDrawing.mm in Sources */,
-				E0C5A101140AEE7E00453E04 /* CCGLView.mm in Sources */,
+				E047863A164C716C00D9CE9B /* CCGLView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

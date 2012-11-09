@@ -5,7 +5,7 @@
 //  Created by Matthieu Savary on 03/03/11.
 //  Copyright (c) 2011 SMALLAB.ORG. All rights reserved.
 //
-//  More info on the CCGL project >> http://www.smallab.org/code/ccgl/
+//  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
 
@@ -15,7 +15,7 @@
 @implementation MyCinderGLDrawing
 
 /**
- *  The superclass setup method
+ *  The setup method
  */
 
 - (void) setup
@@ -61,7 +61,7 @@
 
 
 /**
- *  The superclass draw loop method
+ *  The draw loop method
  */
 
 - (void) draw

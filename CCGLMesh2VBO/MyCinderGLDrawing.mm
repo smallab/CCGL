@@ -5,7 +5,7 @@
 //  Created by Matthieu Savary on 03/03/11.
 //  Copyright (c) 2011 SMALLAB.ORG. All rights reserved.
 //
-//  More info on the CCGL project >> http://www.smallab.org/code/ccgl/
+//  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
 
@@ -58,7 +58,7 @@
 {
     animateVertices([self getElapsedSeconds], mVboMesh, mMesh, mXFactor);
 
-    [self update];
+    gl::setMatrices( mMayaCam.getCamera() );
     
 	// this pair of lines is the standard way to clear the screen in OpenGL
 	gl::clear( Color( 0.15f, 0.15f, 0.15f ) );
@@ -70,16 +70,13 @@
 
 
 
-
 /**
  *  Custom drawing methods
  */
 
-
 void animateVertices(float myTime, gl::VboMesh &vboMesh, TriMesh &mesh, int xFactor)
 {
 	const float timeFreq = 5.0f;
-	const float zFreq = 3.0f;
 	const float xFreq = 7.0f * (xFactor+1)/10.0f;
 	float offset = myTime * timeFreq;
     
@@ -94,7 +91,6 @@ void animateVertices(float myTime, gl::VboMesh &vboMesh, TriMesh &mesh, int xFac
         ++iter;
 	}
 }
-
 
 
 
@@ -113,11 +109,6 @@ void animateVertices(float myTime, gl::VboMesh &vboMesh, TriMesh &mesh, int xFac
 /**
  *  Superclass events
  */
-
-- (void) update
-{
-    gl::setMatrices( mMayaCam.getCamera() );
-}
 
 - (void)reshape
 {

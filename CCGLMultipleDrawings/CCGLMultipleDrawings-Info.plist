@@ -8,6 +8,8 @@
 	<array/>
 	<key>CFBundleExecutable</key>
 	<string>CCGLMultipleDrawings</string>
+	<key>CFBundleIconFile</key>
+	<string>cocoacid-icon</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.smallab.CCGLMultipleDrawings</string>
 	<key>CFBundleInfoDictionaryVersion</key>

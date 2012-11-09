@@ -1,4 +1,4 @@
-**The CocoaCinderGL wrapper: [http://www.smallab.org/code/ccgl/](http://www.smallab.org/code/ccgl/)**
+**The CCGL wrapper for the Mac: [http://cocoacid.org/mac/](http://cocoacid.org/mac/)**
 
 **CocoaCinderGL eases the use of Cinder from within a typical XCode/Cocoa project.** Thus allowing C++/Obj-C creative coders to build MacOS apps bearing several "Cinder sketches" as well as Cocoa sliders, buttons...
 

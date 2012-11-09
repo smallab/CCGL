@@ -5,7 +5,7 @@
 //  Created by Matthieu Savary on 03/03/11.
 //  Copyright (c) 2011 SMALLAB.ORG. All rights reserved.
 //
-//  More info on the CCGL project >> http://www.smallab.org/code/ccgl/
+//  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
 //  This example is based on Paul Houx's great Picking3D sample included in Cinder's
@@ -53,6 +53,7 @@
  */
 
 void drawGrid(float size, float step);
+- (void) animateDuck;
 - (bool) performPickingWith:(Vec3f *) pickedPoint And:(Vec3f *) pickedNormal;
 
 @end

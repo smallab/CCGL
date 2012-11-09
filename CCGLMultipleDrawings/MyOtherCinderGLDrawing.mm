@@ -5,17 +5,18 @@
 //  Created by Matthieu Savary on 03/03/11.
 //  Copyright (c) 2011 SMALLAB.ORG. All rights reserved.
 //
-//  More info on the CCGL project >> http://www.smallab.org/code/ccgl/
+//  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
 
 #import "MyOtherCinderGLDrawing.h"
+#import "Resources.h"
 
 
 @implementation MyOtherCinderGLDrawing
 
 /**
- *  The superclass setup method
+ *  The setup method
  */
 
 - (void) setup
@@ -24,11 +25,13 @@
 	
 	// setup our camera
 	CameraPersp cam;
-	/*cam.lookAt( Vec3f( -100, 10, 10 ), Vec3f::zero() );*/
-	cam.setEyePoint( Vec3f(-100.0f, 10.0f, 10.0f) );
+	cam.setEyePoint( Vec3f(-100.0f, 20.0f, 60.0f) );
 	cam.setCenterOfInterestPoint( Vec3f(0.0f, 0.0f, 0.0f) );
 	cam.setPerspective( 60.0f, [self getWindowAspectRatio], 1.0f, 1000.0f );
 	mMayaCam.setCurrentCam( cam );
+    
+    // Load texture
+	mTexture = gl::Texture( loadImage( [self loadResource:RES_IMAGE_SMALLAB] ) );
 	
 	// set initial value
 	mCubeSize = 50;
@@ -37,7 +40,7 @@
 
 
 /**
- *  The superclass draw loop method
+ *  The draw loop method
  */
 
 - (void) draw
@@ -50,13 +53,14 @@
 	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
     
 	// draw the grid
-    gl::color(  Color(0, 0, 0)  );
+//    gl::color(  Color(0, 0, 0)  );
 	//drawGrid(100.0f, 10.0f);
     
     // draw the cube
-    gl::color(  ColorA(0, 0, 1, 0.90f)  );
+	mTexture.enableAndBind();
+    gl::color(  ColorA(1, 1, 1, 0.50f)  );
 	glPushMatrix();
-	gl::drawCube(Vec3f(0.0f, 0.0f, 0.0f), Vec3f(mCubeSize, mCubeSize, mCubeSize));
+	gl::drawColorCube(Vec3f(0.0f, 0.0f, 0.0f), Vec3f(mCubeSize, mCubeSize, mCubeSize));
 	glPopMatrix();
 }
 

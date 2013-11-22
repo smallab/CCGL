@@ -8,7 +8,7 @@
 //  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
-//  Latest revision on 11/08/12.
+//  Latest revision on 11/21/13.
 //
 //
 //  The Cinder source code is used under the following terms:
@@ -16,15 +16,15 @@
 //
 //  Copyright (c) 2010, The Barbarian Group
 //  All rights reserved.
-//  
+//
 //  Redistribution and use in source and binary forms, with or without modification, are permitted provided that
 //  the following conditions are met:
-//  
+//
 //  * Redistributions of source code must retain the above copyright notice, this list of conditions and
 //  the following disclaimer.
 //  * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and
 //  the following disclaimer in the documentation and/or other materials provided with the distribution.
-//  
+//
 //  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
 //  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
 //  PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -41,7 +41,6 @@
 #include "cinder/Camera.h"
 #include "cinder/ImageIo.h"
 #include "cinder/app/Event.h"
-#include "cinder/app/ResizeEvent.h"
 #include "cinder/app/MouseEvent.h"
 #include "cinder/app/KeyEvent.h"
 #include "cinder/app/FileDropEvent.h"
@@ -140,7 +139,7 @@ public:
 //! Returns the absolute file path to a resource located at \a rsrcRelativePath inside the bundle's resources folder. Throws ResourceLoadExc on failure. \sa \ref CinderResources
 - (string)			getResourcePath:(string) rsrcRelativePath;
 /*//! Returns the absolute file path to the bundle's resources folder. \sa \ref CinderResources
-static std::string			getResourcePath();*/
+ static std::string			getResourcePath();*/
 //! Presents the user with a file-open dialog and returns the selected file path.
 /** The dialog optionally begins at the path \a initialPath and can be limited to allow selection of files ending in the extensions enumerated in \a extensions.
  If the active app is in full-screen mode it will temporarily switch to windowed-mode to present the dialog.

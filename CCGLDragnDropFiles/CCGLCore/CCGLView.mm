@@ -8,7 +8,7 @@
 //  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
-//  Latest revision on 11/08/12.
+//  Latest revision on 11/21/13.
 //
 //
 //  The Cinder source code is used under the following terms:
@@ -16,15 +16,15 @@
 //
 //  Copyright (c) 2010, The Barbarian Group
 //  All rights reserved.
-//  
+//
 //  Redistribution and use in source and binary forms, with or without modification, are permitted provided that
 //  the following conditions are met:
-//  
+//
 //  * Redistributions of source code must retain the above copyright notice, this list of conditions and
 //  the following disclaimer.
 //  * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and
 //  the following disclaimer in the documentation and/or other materials provided with the distribution.
-//  
+//
 //  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
 //  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
 //  PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -41,11 +41,11 @@
 
 /**
  *	Overriding NSView's initWithFrame: to specify our pixel format
- *	
- *	Note: initWithFrame is called only if a "Custom View" is used in Interface Builder 
+ *
+ *	Note: initWithFrame is called only if a "Custom View" is used in Interface Builder
  *	and the custom class is a subclass of NSView. For more information on resource loading
  *	see: developer.apple.com (ADC Home > Documentation > Cocoa > Resource Management > Loading Resources)
- */	
+ */
 
 - (id) initWithFrame: (NSRect) frame
 {
@@ -54,7 +54,7 @@
 		NSOpenGLPFAWindow,
 		NSOpenGLPFADoubleBuffer,
 		NSOpenGLPFADepthSize, (NSOpenGLPixelFormatAttribute)24,
-		NSOpenGLPFASampleBuffers, (NSOpenGLPixelFormatAttribute)1, 
+		NSOpenGLPFASampleBuffers, (NSOpenGLPixelFormatAttribute)1,
 		NSOpenGLPFASamples, (NSOpenGLPixelFormatAttribute)sAntiAliasingSamples[32],
 		NSOpenGLPFANoRecovery,
 		(NSOpenGLPixelFormatAttribute)0
@@ -68,24 +68,24 @@
         frameRate = 30;
 	}
 	
-	return self = [super initWithFrame:frame pixelFormat: [fmt autorelease]];
+	return self = [super initWithFrame:frame pixelFormat: fmt ];
 }
 
 
 
 /**
  *	Overriding the NSView's awakeFromNib: and building animation timer
- */	 
+ */
 
 - (void) awakeFromNib
 {
     [[self window] setAcceptsMouseMovedEvents:YES];
     
 	[self registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, nil]];
-
+    
 	frameCount = 0;
     float frameLength = 1/frameRate;
-	drawTimer = [[NSTimer scheduledTimerWithTimeInterval:frameLength target:self selector:@selector(timer:) userInfo:nil repeats:YES] retain];
+	drawTimer = /*[*/ [NSTimer scheduledTimerWithTimeInterval:frameLength target:self selector:@selector(timer:) userInfo:nil repeats:YES];
     startTime = ::CFAbsoluteTimeGetCurrent();
 }
 
@@ -99,12 +99,12 @@
 
 /**
  *	Overriding the NSView's drawRect: to draw our GL content
- */	 
+ */
 
 - (void) drawRect: (NSRect) rect
 {
 	//[self update];
-
+    
 	if (!appSetupCalled) {
 		[self setup];
 		return;
@@ -179,7 +179,7 @@
 
 
 /**
- *  Cocoa'd general utils extracted from Cinder 
+ *  Cocoa'd general utils extracted from Cinder
  */
 
 - (double) getElapsedSeconds
@@ -216,10 +216,10 @@
 	Surface s( area.getWidth(), area.getHeight(), false );
 	glFlush(); // there is some disagreement about whether this is necessary, but ideally performance-conscious users will use FBOs anyway
 	GLint oldPackAlignment;
-	glGetIntegerv( GL_PACK_ALIGNMENT, &oldPackAlignment ); 
+	glGetIntegerv( GL_PACK_ALIGNMENT, &oldPackAlignment );
 	glPixelStorei( GL_PACK_ALIGNMENT, 1 );
 	glReadPixels( area.x1, [self getWindowHeight] - area.y2, area.getWidth(), area.getHeight(), GL_RGB, GL_UNSIGNED_BYTE, s.getData() );
-	glPixelStorei( GL_PACK_ALIGNMENT, oldPackAlignment );		
+	glPixelStorei( GL_PACK_ALIGNMENT, oldPackAlignment );
 	ip::flipVertical( &s );
 	return s;
 }
@@ -259,7 +259,7 @@
 }
 
 - (int)prepMouseEventModifiers:(NSEvent *)evt
-{	
+{
 	unsigned int result = 0;
 	if( [evt modifierFlags] & NSControlKeyMask ) result |= cinder::app::MouseEvent::CTRL_DOWN;
 	if( [evt modifierFlags] & NSShiftKeyMask ) result |= cinder::app::MouseEvent::SHIFT_DOWN;
@@ -292,7 +292,7 @@
     else
         mKeyShiftDown = false;
     
-	//cinder::app::KeyEvent k = cinder::app::KeyEvent (cinder::app::KeyEvent::translateNativeKeyCode( code ), (char)c, mods, code);	
+	//cinder::app::KeyEvent k = cinder::app::KeyEvent (cinder::app::KeyEvent::translateNativeKeyCode( code ), (char)c, mods, code);
 	//app->privateKeyDown__( k );
 }
 
@@ -368,7 +368,7 @@
     mRightMouseShiftDown = false;
 	
 	mods |= cinder::app::MouseEvent::RIGHT_DOWN;
-	//app->privateMouseUp__( cinder::app::MouseEvent( cinder::app::MouseEvent::RIGHT_DOWN, curPoint.x, y, mods, 0.0f, [theEvent modifierFlags] ) );	
+	//app->privateMouseUp__( cinder::app::MouseEvent( cinder::app::MouseEvent::RIGHT_DOWN, curPoint.x, y, mods, 0.0f, [theEvent modifierFlags] ) );
 }
 
 - (void)otherMouseUp:(NSEvent *)theEvent
@@ -415,7 +415,7 @@
 	NSPoint curPoint		= [theEvent locationInWindow];
 	//int y					= app->getWindowHeight() - curPoint.y;
 	int mods				= [self prepMouseEventModifiers:theEvent];
-
+    
 	//console() << "MouseDragged x : " << curPoint.x << ", y : " << curPoint.y << endl;
 	
 	mods |= cinder::app::MouseEvent::LEFT_DOWN;
@@ -428,10 +428,10 @@
 	NSPoint curPoint		= [theEvent locationInWindow];
 	//int y					= app->getWindowHeight() - curPoint.y;
 	int mods				= [self prepMouseEventModifiers:theEvent];
-
+    
 	//console() << "MouseWheel x : " << curPoint.x << ", y : " << curPoint.y << ", wheeling : " << wheelDelta << endl;
-
-	//app->privateMouseWheel__( cinder::app::MouseEvent( 0, curPoint.x, y, mods, wheelDelta / 4.0f, [theEvent modifierFlags] ) );	
+    
+	//app->privateMouseWheel__( cinder::app::MouseEvent( 0, curPoint.x, y, mods, wheelDelta / 4.0f, [theEvent modifierFlags] ) );
 }
 
 
@@ -467,12 +467,12 @@
 		NSLog([filenames objectAtIndex:i]);
 		NSString *filename = [filenames objectAtIndex:i];
 		if ([filename hasSuffix:@".gif"] || [filename hasSuffix:@".jpg"] || [filename hasSuffix:@".jpeg"] || [filename hasSuffix:@".png"]) {
-            // do something with an image file 
+            // do something with an image file
         }
         else {
             // NSBeep();
         }
-	}	
+	}
 }
 
 
@@ -559,7 +559,7 @@ ResourceLoadExc::ResourceLoadExc( const string &macPath )
 string getOpenFilePath( const string &initialPath, vector<string> extensions )
 {
 	/*bool wasFullScreen = isFullScreen();
-	setFullScreen( false );*/
+     setFullScreen( false );*/
 	
 	NSOpenPanel *cinderOpen = [NSOpenPanel openPanel];
 	[cinderOpen setCanChooseFiles:YES];
@@ -574,10 +574,10 @@ string getOpenFilePath( const string &initialPath, vector<string> extensions )
 	}
 	
 	NSString *directory = initialPath.empty() ? nil : [[NSString stringWithUTF8String:initialPath.c_str()] stringByExpandingTildeInPath];
-	int resultCode = [cinderOpen runModalForDirectory:directory file:nil types:typesArray];	
+	int resultCode = [cinderOpen runModalForDirectory:directory file:nil types:typesArray];
 	
 	/*setFullScreen( wasFullScreen );
-	restoreWindowContext();*/
+     restoreWindowContext();*/
 	
 	if( resultCode == NSOKButton ) {
 		NSString *result = [[cinderOpen filenames] objectAtIndex:0];
@@ -590,7 +590,7 @@ string getOpenFilePath( const string &initialPath, vector<string> extensions )
 string getFolderPath( const string &initialPath )
 {
 	/*bool wasFullScreen = isFullScreen();
-	setFullScreen(false);*/
+     setFullScreen(false);*/
 	
 	NSOpenPanel *cinderOpen = [NSOpenPanel openPanel];
 	[cinderOpen setCanChooseFiles:NO];
@@ -598,10 +598,10 @@ string getFolderPath( const string &initialPath )
 	[cinderOpen setAllowsMultipleSelection:NO];
 	
 	NSString *directory = initialPath.empty() ? nil : [[NSString stringWithUTF8String:initialPath.c_str()] stringByExpandingTildeInPath];
-	int resultCode = [cinderOpen runModalForDirectory:directory file:nil types:nil];	
+	int resultCode = [cinderOpen runModalForDirectory:directory file:nil types:nil];
 	
 	/*setFullScreen(wasFullScreen);
-	restoreWindowContext();*/
+     restoreWindowContext();*/
 	
 	if(resultCode == NSOKButton) {
 		NSString *result = [[cinderOpen filenames] objectAtIndex:0];
@@ -614,7 +614,7 @@ string getFolderPath( const string &initialPath )
 string	getSaveFilePath( const string &initialPath, vector<string> extensions )
 {
 	/*bool wasFullScreen = isFullScreen();
-	setFullScreen( false );*/
+     setFullScreen( false );*/
 	
 	NSSavePanel *cinderSave = [NSSavePanel savePanel];
 	
@@ -638,13 +638,13 @@ string	getSaveFilePath( const string &initialPath, vector<string> extensions )
 		}
 		else {
 			file = [directory lastPathComponent];
-			directory = [directory stringByDeletingLastPathComponent];			
+			directory = [directory stringByDeletingLastPathComponent];
 		}
 	}
 	int resultCode = [cinderSave runModalForDirectory:directory file:file];
 	
 	/*setFullScreen( wasFullScreen );
-	restoreWindowContext();*/
+     restoreWindowContext();*/
 	
 	if( resultCode == NSOKButton ) {
 		string result( [[cinderSave filename] UTF8String] );

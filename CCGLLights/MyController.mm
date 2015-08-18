@@ -14,14 +14,14 @@
 
 @implementation MyController
 
-- (IBAction) listenToSliderOutput: (NSSlider*) sender
+- (IBAction)listenToSliderOutput:(NSSlider*)sender
 {
 	int value = [sender intValue];
 	[CinderDrawing setCubeSize:value];
     [CinderDrawing setNeedsDisplay:YES];
 }
 
-- (IBAction) listenToMatSpecSliderOutput: (NSSlider*) sender
+- (IBAction)listenToMatSpecSliderOutput:(NSSlider*)sender
 {
 	int value = [sender intValue];
 	[CinderDrawing setMatSpec:value];

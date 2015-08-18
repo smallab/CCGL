@@ -52,6 +52,6 @@ void animateVertices(float mTime, gl::VboMesh &vboMesh, TriMesh &mesh, int xFact
  *  Cocoa UI methods
  */
 
-- (void) setXFactor: (int) factor;
+- (void)setXFactor:(int)factor;
 
 @end

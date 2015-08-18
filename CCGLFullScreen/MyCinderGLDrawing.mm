@@ -13,11 +13,9 @@
 
 @implementation MyCinderGLDrawing
 
-/**
- *  The superclass setup method
- */
+#pragma mark - The superclass setup method
 
-- (void) setup
+- (void)setup
 {
 	[super setup];
 	
@@ -28,11 +26,9 @@
 
 
 
-/**
- *  The superclass draw loop method
- */
+#pragma mark - The superclass draw loop method
 
-- (void) draw
+- (void)draw
 {
     // use the camera
     gl::setMatrices( cam );
@@ -50,9 +46,7 @@
 
 
 
-/**
- *  Superclass events
- */
+#pragma mark - Superclass events
 
 - (void)reshape
 {

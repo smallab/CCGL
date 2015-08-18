@@ -13,11 +13,9 @@
 
 @implementation MyCinderGLDrawing
 
-/**
- *  The superclass setup method
- */
+#pragma mark - The superclass setup method
 
-- (void) setup
+- (void)setup
 {
 	[super setup];
 	
@@ -50,11 +48,9 @@
 }
     
     
-/**
- *  The superclass draw loop method
- */
+#pragma mark - The superclass draw loop method
 
-- (void) draw
+- (void)draw
 {
     animateVertices([self getElapsedSeconds], mVboMesh, mMesh, mXFactor);
 
@@ -70,9 +66,7 @@
 
 
 
-/**
- *  Custom drawing methods
- */
+#pragma mark - Custom drawing methods
 
 void animateVertices(float myTime, gl::VboMesh &vboMesh, TriMesh &mesh, int xFactor)
 {
@@ -94,9 +88,7 @@ void animateVertices(float myTime, gl::VboMesh &vboMesh, TriMesh &mesh, int xFac
 
 
 
-/**
- *  Cocoa UI methods
- */
+#pragma mark - Cocoa UI methods
 
 - (void) setXFactor: (int) factor
 {
@@ -106,9 +98,7 @@ void animateVertices(float myTime, gl::VboMesh &vboMesh, TriMesh &mesh, int xFac
 
 
 
-/**
- *  Superclass events
- */
+#pragma mark - Superclass events
 
 - (void)reshape
 {

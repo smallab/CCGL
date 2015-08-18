@@ -13,11 +13,9 @@
 
 @implementation MyCinderGLDrawing
 
-/**
- *  The superclass setup method
- */
+#pragma mark - The superclass setup method
 
-- (void) setup
+- (void)setup
 {
 	[super setup];
 	
@@ -42,12 +40,9 @@
 
 
 
+#pragma mark - The superclass draw loop method
 
-/**
- *  The superclass draw loop method
- */
-
-- (void) draw
+- (void)draw
 {
 	gl::enableDepthWrite();
 	gl::enableDepthRead();
@@ -77,9 +72,7 @@
 
 
 
-/**
- *  Superclass events
- */
+#pragma mark - Superclass events
 
 - (void)reshape
 {

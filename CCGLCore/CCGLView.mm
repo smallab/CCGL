@@ -8,7 +8,7 @@
 //  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
-//  Latest revision on 11/21/13.
+//  Latest revision on 08/18/2015.
 //
 //
 //  The Cinder source code is used under the following terms:
@@ -39,6 +39,9 @@
 
 @implementation CCGLView
 
+
+#pragma mark - Overriding startup view methods
+
 /**
  *	Overriding NSView's initWithFrame: to specify our pixel format
  *
@@ -47,7 +50,7 @@
  *	see: developer.apple.com (ADC Home > Documentation > Cocoa > Resource Management > Loading Resources)
  */
 
-- (id) initWithFrame: (NSRect) frame
+- (id)initWithFrame:(NSRect)frame
 {
 	const int sAntiAliasingSamples[] = { 0, 2, 4, 6, 8, 16, 32 };
 	NSOpenGLPixelFormatAttribute attribs [] = {
@@ -71,13 +74,11 @@
 	return self = [super initWithFrame:frame pixelFormat: fmt ];
 }
 
-
-
 /**
  *	Overriding the NSView's awakeFromNib: and building animation timer
  */
 
-- (void) awakeFromNib
+- (void)awakeFromNib
 {
     [[self window] setAcceptsMouseMovedEvents:YES];
     
@@ -89,19 +90,17 @@
     startTime = ::CFAbsoluteTimeGetCurrent();
 }
 
-- (void) timer: (NSTimer *) timer
+- (void)timer:(NSTimer *)timer
 {
 	frameCount ++;
 	[self setNeedsDisplay:YES];
 }
 
-
-
 /**
  *	Overriding the NSView's drawRect: to draw our GL content
  */
 
-- (void) drawRect: (NSRect) rect
+- (void)drawRect:(NSRect)rect
 {
 	//[self update];
     
@@ -121,11 +120,9 @@
 
 
 
-/**
- *	Preparing to draw
- */
+#pragma mark - Preparing to draw
 
-- (void) setup
+- (void)setup
 {
 	[self glView];
 	[self glParams];
@@ -136,7 +133,7 @@
  *	Convenience camera method to be used in setup (or on reshape, etc.)
  */
 
-- (void) glView
+- (void)glView
 {
 	glViewport( 0, 0, [self frame].size.width, [self frame].size.height );
 	CameraPersp cam( [self frame].size.width, [self frame].size.height, 60.0f );
@@ -154,7 +151,7 @@
  *	Some default GL parameters to be used in setup
  */
 
-- (void) glParams
+- (void)glParams
 {
 	gl::enableDepthWrite();
 	gl::enableDepthRead();
@@ -165,11 +162,9 @@
 
 
 
-/**
- *  Actual drawing with a default scene clearing
- */
+#pragma mark - Actual drawing with a default scene clearing
 
-- (void) draw
+- (void)draw
 {
 	// this pair of lines is the standard way to clear the screen in OpenGL
 	gl::clear( Color( 0.5f, 0.5f, 0.5f ), true );
@@ -178,38 +173,36 @@
 
 
 
-/**
- *  Cocoa'd general utils extracted from Cinder
- */
+#pragma mark - general utils extracted from Cinder
 
-- (double) getElapsedSeconds
+- (double)getElapsedSeconds
 {
     return ::CFAbsoluteTimeGetCurrent() - startTime;
 }
 
-- (int) getWindowWidth
+- (int)getWindowWidth
 {
 	NSRect bounds = [self bounds];
 	return bounds.size.width; // should better use [self frame].size.height ?
 }
 
-- (int) getWindowHeight
+- (int)getWindowHeight
 {
 	NSRect bounds = [self bounds];
 	return bounds.size.height; // should better use [self frame].size.height ?
 }
 
-- (Area) getWindowBounds
+- (Area)getWindowBounds
 {
     return Area( 0, 0, [self getWindowWidth], [self getWindowHeight] );
 }
 
-- (Surface)	copyWindowSurface
+- (Surface)copyWindowSurface
 {
 	return [self copyWindowSurface:[self getWindowBounds]];
 }
 
-- (Surface)	copyWindowSurface:(Area) area
+- (Surface)copyWindowSurface:(Area)area
 {
 	Area clippedArea = area.getClipBy( [self getWindowBounds] );
     
@@ -224,12 +217,12 @@
 	return s;
 }
 
-- (float) getWindowAspectRatio
+- (float)getWindowAspectRatio
 {
 	return [self getWindowWidth] / (float) [self getWindowHeight];
 }
 
-- (bool) withinDrawingBoundsX:(int)x Y:(int)y
+- (bool)withinDrawingBoundsX:(int)x Y:(int)y
 {
     return (x < [self getWindowWidth] &&
             x > 0 &&
@@ -239,9 +232,7 @@
 
 
 
-/**
- *	Events
- */
+#pragma mark - View events
 
 - (BOOL) acceptsFirstResponder { return YES; }
 
@@ -477,9 +468,7 @@
 
 
 
-/**
- *  Cursor utils
- */
+#pragma mark - Cursor utils
 
 void arrowCursor()
 {
@@ -508,9 +497,7 @@ void hideCursor()
 
 
 
-/**
- *  Cinder's cout alias
- */
+#pragma mark - std::cout alias
 
 ostream& console()
 {
@@ -519,16 +506,14 @@ ostream& console()
 
 
 
-/**
- *  Cinder's resource handling gone slightly or very Cocoa
- */
+#pragma mark - resource handling gone slightly or very Cocoa
 
 ResourceLoadExc::ResourceLoadExc( const string &macPath )
 {
 	sprintf( mMessage, "Failed to load resource: %s", macPath.c_str() );
 }
 
-- (DataSourcePathRef) loadResource:(string) macPath
+- (DataSourcePathRef)loadResource:(string)macPath
 {
 	string resourcePath = [self getResourcePath:macPath];
 	if( resourcePath.empty() )
@@ -537,7 +522,7 @@ ResourceLoadExc::ResourceLoadExc( const string &macPath )
 		return DataSourcePath::create( resourcePath );
 }
 
-- (string) getResourcePath:(string) rsrcRelativePath
+- (string)getResourcePath:(string)rsrcRelativePath
 {
 	string path = getPathDirectory( rsrcRelativePath );
 	string fileName = getPathFileName( rsrcRelativePath );
@@ -611,7 +596,7 @@ string getFolderPath( const string &initialPath )
 		return string();
 }
 
-string	getSaveFilePath( const string &initialPath, vector<string> extensions )
+string getSaveFilePath( const string &initialPath, vector<string> extensions )
 {
 	/*bool wasFullScreen = isFullScreen();
      setFullScreen( false );*/

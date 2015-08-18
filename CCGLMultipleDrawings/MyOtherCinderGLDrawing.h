@@ -31,6 +31,6 @@
  *  Cocoa UI methods
  */
 
-- (void) setCubeSize: (int) size;
+- (void)setCubeSize:(int)size;
 
 @end

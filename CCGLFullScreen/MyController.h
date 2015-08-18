@@ -12,10 +12,10 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface MyController : NSObject {
+@interface MyController : NSObject<NSApplicationDelegate> {
 	IBOutlet id CinderDrawing;
 }
 
-- (IBAction) listenToGoFullScreenButton: (NSButton*) sender;
+- (IBAction)listenToGoFullScreenButton:(NSButton*)sender;
 
 @end

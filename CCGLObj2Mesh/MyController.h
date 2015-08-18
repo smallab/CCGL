@@ -12,7 +12,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface MyController : NSObject {
+@interface MyController : NSObject<NSApplicationDelegate> {
 	IBOutlet id CinderDrawing;
 }
 @end

@@ -20,10 +20,6 @@
 	int mCubeSize;
 }
 
-/**
- *  Cocoa UI methods
- */
-
-- (void) setCubeSize: (int) bits;
+- (void)setCubeSize:(int)bits;
 
 @end

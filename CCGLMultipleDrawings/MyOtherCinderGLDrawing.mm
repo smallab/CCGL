@@ -15,11 +15,9 @@
 
 @implementation MyOtherCinderGLDrawing
 
-/**
- *  The setup method
- */
+#pragma mark - The setup method
 
-- (void) setup
+- (void)setup
 {
 	[super setup];
 	
@@ -39,11 +37,9 @@
 
 
 
-/**
- *  The draw loop method
- */
+#pragma mark - The draw loop method
 
-- (void) draw
+- (void)draw
 {
 	// use the camera 
 	gl::setMatrices( mMayaCam.getCamera() );
@@ -67,11 +63,9 @@
 
 
 
-/**
- *  Cocoa UI methods
- */
+#pragma mark - Cocoa UI methods
 
-- (void) setCubeSize: (int) size
+- (void) setCubeSize:(int)size
 {
 	mCubeSize = size;
 	console() << size << endl;
@@ -79,9 +73,7 @@
 
 
 
-/**
- *  Superclass events
- */
+#pragma mark - Superclass events
 
 - (void)reshape
 {

@@ -12,11 +12,10 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface MyController : NSObject {
+@interface MyController : NSObject<NSApplicationDelegate> {
 	IBOutlet id CinderDrawing;
 }
 
-- (IBAction) listenToWindow: (id) sender;
-- (IBAction) listenToSliderOutput: (NSSlider*) sender;
+- (IBAction)listenToSliderOutput:(NSSlider*)sender;
 
 @end

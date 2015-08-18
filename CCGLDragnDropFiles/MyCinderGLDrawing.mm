@@ -13,9 +13,7 @@
 
 @implementation MyCinderGLDrawing
 
-/**
- *  The superclass setup method
- */
+#pragma mark - The superclass setup method
 
 - (void) setup
 {
@@ -36,9 +34,7 @@
 
 
 
-/**
- *  The superclass draw loop method
- */
+#pragma mark - The superclass draw loop method
 
 - (void) draw
 {
@@ -65,10 +61,7 @@
 
 
 
-
-/**
- *  Custom drawing methods
- */
+#pragma mark - Custom drawing methods
 
 void drawGrid(float size, float step)
 {
@@ -81,11 +74,9 @@ void drawGrid(float size, float step)
 
 
 
-/**
- *  Cocoa UI methods
- */
+#pragma mark - Cocoa UI methods
 
-- (void) setCubeSize: (int) size
+- (void)setCubeSize:(int)size
 {
 	mCubeSize = size;
 	console() << size << endl;
@@ -93,9 +84,7 @@ void drawGrid(float size, float step)
 
 
 
-/**
- *  Superclass events
- */
+#pragma mark - Superclass events
 
 - (void)reshape
 {

@@ -8,7 +8,7 @@
 //  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
-//  Latest revision on 11/21/13.
+//  Latest revision on 08/18/2015.
 //
 //
 //  The Cinder source code is used under the following terms:

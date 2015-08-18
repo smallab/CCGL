@@ -14,7 +14,7 @@
 
 @implementation MyController
 
-- (IBAction) listenToSliderOutput: (NSSlider*) sender
+- (IBAction)listenToSliderOutput:(NSSlider*)sender
 {
 	int value = [sender intValue];
 	[CinderDrawing setCubeSize:value];

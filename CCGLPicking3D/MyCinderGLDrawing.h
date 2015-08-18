@@ -53,7 +53,7 @@
  */
 
 void drawGrid(float size, float step);
-- (void) animateDuck;
-- (bool) performPickingWith:(Vec3f *) pickedPoint And:(Vec3f *) pickedNormal;
+- (void)animateDuck;
+- (bool)performPickingWith:(Vec3f *)pickedPoint And:(Vec3f *)pickedNormal;
 
 @end

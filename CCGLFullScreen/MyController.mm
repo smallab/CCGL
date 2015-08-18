@@ -14,7 +14,7 @@
 
 @implementation MyController
 
-- (IBAction) listenToGoFullScreenButton: (NSButton*) sender
+- (IBAction)listenToGoFullScreenButton:(NSButton*)sender
 {
     if ([CinderDrawing isInFullScreenMode] == NO)
         [CinderDrawing enterFullScreenMode:[NSScreen mainScreen] withOptions:nil];

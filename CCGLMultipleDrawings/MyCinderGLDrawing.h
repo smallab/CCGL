@@ -31,6 +31,6 @@ void drawGrid(float size, float step);
  *  Cocoa UI methods
  */
 
-- (void) setCubeSize: (int) bits;
+- (void)setCubeSize:(int)bits;
 
 @end

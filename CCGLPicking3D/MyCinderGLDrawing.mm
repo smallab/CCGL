@@ -16,11 +16,9 @@
 
 @implementation MyCinderGLDrawing
 
-/**
- *  The superclass setup method
- */
+#pragma mark - The superclass setup method
 
-- (void) setup
+- (void)setup
 {
 	[super setup];
 	
@@ -57,11 +55,9 @@
 }
 
 
-/**
- *  The superclass draw loop method
- */
+#pragma mark - The superclass draw loop method
 
-- (void) draw
+- (void)draw
 {
     [self animateDuck];
     
@@ -114,9 +110,7 @@
 
 
 
-/**
- *  Custom drawing methods
- */
+#pragma mark - Custom drawing methods
 
 void drawGrid(float size, float step)
 {
@@ -126,7 +120,7 @@ void drawGrid(float size, float step)
 	}
 }
 
-- (void) animateDuck
+- (void)animateDuck
 {
 	// calculate elapsed time
 	mTime = [self getElapsedSeconds];
@@ -138,7 +132,7 @@ void drawGrid(float size, float step)
 	mTransform.rotate( Vec3f::zAxis(), sinf( (float) mTime * 4.3f ) * 0.09f );
 }
 
-- (bool) performPickingWith:(Vec3f *) pickedPoint And:(Vec3f *) pickedNormal
+- (bool)performPickingWith:(Vec3f *)pickedPoint And:(Vec3f *)pickedNormal
 {
 	// get our camera 
 	CameraPersp cam = mMayaCam.getCamera();
@@ -212,9 +206,7 @@ void drawGrid(float size, float step)
 
 
 
-/**
- *  Superclass events
- */
+#pragma mark - Superclass events
 
 - (void)reshape
 {

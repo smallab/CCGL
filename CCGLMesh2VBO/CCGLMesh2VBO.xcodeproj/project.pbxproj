@@ -10,10 +10,10 @@
 		565FEC6407B17BE200C4E23A /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3407B1797F00C4E23A /* MainMenu.nib */; };
 		565FEC6507B17BE300C4E23A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565FEC3607B1797F00C4E23A /* InfoPlist.strings */; };
 		E0195BA9140C34CE00C7C5BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0195BA7140C34CE00C7C5BD /* main.m */; };
-		E047866C164C7FAE00D9CE9B /* CCGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E047866B164C7FAE00D9CE9B /* CCGLView.mm */; };
 		E04786A9164C86B000D9CE9B /* cocoacid-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E04786A8164C86B000D9CE9B /* cocoacid-icon.icns */; };
 		E05E3639131FED77002C53B5 /* MyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E05E3638131FED77002C53B5 /* MyController.mm */; };
 		E05EDDE8139CEE57003ADBDA /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = E05EDDE7139CEE57003ADBDA /* cube.obj */; };
+		E062B6891B837F5A00B0016A /* CCGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E062B6881B837F5A00B0016A /* CCGLView.mm */; };
 		E082CA4613551B6300F14EC8 /* MyCinderGLDrawing.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */; };
 		E0B57BF1131D3ECA0044F1D0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */; };
 		E0B8AB19139947ED00A3E7B2 /* cinder_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B8AB18139947ED00A3E7B2 /* cinder_logo.png */; };
@@ -37,12 +37,12 @@
 		565FEC3707B1797F00C4E23A /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		565FEC4E07B179BA00C4E23A /* CCGLMesh2VBO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCGLMesh2VBO-Info.plist"; sourceTree = "<group>"; };
 		E0195BA7140C34CE00C7C5BD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E047866A164C7FAE00D9CE9B /* CCGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCGLView.h; path = CCGLCore/CCGLView.h; sourceTree = "<group>"; };
-		E047866B164C7FAE00D9CE9B /* CCGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCGLView.mm; path = CCGLCore/CCGLView.mm; sourceTree = "<group>"; };
 		E04786A8164C86B000D9CE9B /* cocoacid-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "cocoacid-icon.icns"; sourceTree = "<group>"; };
 		E05E3637131FED77002C53B5 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
 		E05E3638131FED77002C53B5 /* MyController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyController.mm; sourceTree = "<group>"; };
 		E05EDDE7139CEE57003ADBDA /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+		E062B6871B837F5A00B0016A /* CCGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLView.h; sourceTree = "<group>"; };
+		E062B6881B837F5A00B0016A /* CCGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCGLView.mm; sourceTree = "<group>"; };
 		E082CA4013551AD600F14EC8 /* CCGLMesh2VBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGLMesh2VBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B57BF0131D3ECA0044F1D0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E0B57C12131DD62E0044F1D0 /* MyCinderGLDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCinderGLDrawing.h; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				E04786A8164C86B000D9CE9B /* cocoacid-icon.icns */,
-				565FEC2E07B1794000C4E23A /* CCGLCore */,
-				565FEC2F07B1794500C4E23A /* MyAssets */,
+				E062B6861B837F5A00B0016A /* CCGLCore */,
 				565FEC2D07B1793B00C4E23A /* MyClasses */,
+				565FEC2F07B1794500C4E23A /* MyAssets */,
 				E0478669164C7F4400D9CE9B /* Supporting files */,
 				565FEC3007B1794A00C4E23A /* Frameworks */,
 				565FEC4C07B179BA00C4E23A /* Products */,
@@ -112,15 +112,6 @@
 				E0B57C13131DD62E0044F1D0 /* MyCinderGLDrawing.mm */,
 			);
 			name = MyClasses;
-			sourceTree = "<group>";
-		};
-		565FEC2E07B1794000C4E23A /* CCGLCore */ = {
-			isa = PBXGroup;
-			children = (
-				E047866A164C7FAE00D9CE9B /* CCGLView.h */,
-				E047866B164C7FAE00D9CE9B /* CCGLView.mm */,
-			);
-			name = CCGLCore;
 			sourceTree = "<group>";
 		};
 		565FEC2F07B1794500C4E23A /* MyAssets */ = {
@@ -158,6 +149,16 @@
 				565FEC3607B1797F00C4E23A /* InfoPlist.strings */,
 			);
 			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E062B6861B837F5A00B0016A /* CCGLCore */ = {
+			isa = PBXGroup;
+			children = (
+				E062B6871B837F5A00B0016A /* CCGLView.h */,
+				E062B6881B837F5A00B0016A /* CCGLView.mm */,
+			);
+			name = CCGLCore;
+			path = ../CCGLCore;
 			sourceTree = "<group>";
 		};
 		E0CBCECD12A73F3100354DD6 /* Linked Frameworks */ = {
@@ -256,7 +257,7 @@
 				E05E3639131FED77002C53B5 /* MyController.mm in Sources */,
 				E082CA4613551B6300F14EC8 /* MyCinderGLDrawing.mm in Sources */,
 				E0195BA9140C34CE00C7C5BD /* main.m in Sources */,
-				E047866C164C7FAE00D9CE9B /* CCGLView.mm in Sources */,
+				E062B6891B837F5A00B0016A /* CCGLView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

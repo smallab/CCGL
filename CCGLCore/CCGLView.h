@@ -75,6 +75,10 @@ using namespace std;
     
     // App setup flag
 	bool appSetupCalled;
+    
+    // Capture sketch
+    NSImage *ccglCapture;
+    BOOL ccglCaptureFlag;
 }
 
 /**
@@ -87,6 +91,12 @@ using namespace std;
 
 - (void)makeCurrentContext;
 - (void)flushBuffer;
+
+/**
+ *	OpenGL capture method
+ */
+
+- (void)captureNextFrame;
 
 /**
  *  Actual drawing

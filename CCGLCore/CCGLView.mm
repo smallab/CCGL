@@ -88,6 +88,8 @@
     float frameLength = 1/frameRate;
 	drawTimer = /*[*/ [NSTimer scheduledTimerWithTimeInterval:frameLength target:self selector:@selector(timer:) userInfo:nil repeats:YES];
     startTime = ::CFAbsoluteTimeGetCurrent();
+    
+    ccglCaptureFlag = false;
 }
 
 - (void)timer:(NSTimer *)timer
@@ -122,6 +124,40 @@
 - (void)flushBuffer
 {
     [[self openGLContext] flushBuffer];
+    
+    // Capture sketch
+    // This has to happen here, after buffer is flushed
+    if (ccglCaptureFlag) {
+        [self popSavePanel];
+        ccglCaptureFlag = NO;
+    }
+}
+
+
+
+#pragma mark - OpenGL capture method
+
+- (void)captureNextFrame
+{
+    ccglCaptureFlag = YES;
+}
+
+- (void)popSavePanel
+{
+    NSSavePanel *panel = [NSSavePanel savePanel];
+    [panel setNameFieldStringValue:@"untitled.png"];
+    [panel beginWithCompletionHandler:^(NSInteger result) {
+        if (result == NSFileHandlingPanelOKButton) {
+            NSURL *saveURL = [panel URL];
+            [self saveSurface2ImgFileWithSurface:[self copyWindowSurface] andPath:saveURL.path];
+        }
+    }];
+}
+
+- (void)saveSurface2ImgFileWithSurface:(Surface)s andPath:(NSString*)path
+{
+    std::string str([path UTF8String]);
+    writeImage(fs::path( str ), s);
 }
 
 

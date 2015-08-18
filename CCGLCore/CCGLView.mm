@@ -102,20 +102,26 @@
 
 - (void)drawRect:(NSRect)rect
 {
-	//[self update];
-    
 	if (!appSetupCalled) {
 		[self setup];
 		return;
 	}
 	
-	[[self openGLContext] makeCurrentContext];
-	GLint swapInterval = 1;
-	[[self openGLContext] setValues:&swapInterval forParameter:NSOpenGLCPSwapInterval];
-    
-	[self draw];
-	
-	[[self openGLContext] flushBuffer];
+    [self makeCurrentContext];
+    [self draw];
+    [self flushBuffer];
+}
+
+- (void)makeCurrentContext
+{
+    [[self openGLContext] makeCurrentContext];
+    GLint swapInterval = 1;
+    [[self openGLContext] setValues:&swapInterval forParameter:NSOpenGLCPSwapInterval];
+}
+
+- (void)flushBuffer
+{
+    [[self openGLContext] flushBuffer];
 }
 
 

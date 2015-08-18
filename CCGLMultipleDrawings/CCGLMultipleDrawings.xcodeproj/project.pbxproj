@@ -321,7 +321,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
 				PRODUCT_NAME = CCGLMultipleDrawings;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx10.10;
 			};
 			name = Debug;
 		};
@@ -356,7 +356,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
 				PRODUCT_NAME = CCGLMultipleDrawings;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx10.10;
 				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include";
 			};
 			name = Release;

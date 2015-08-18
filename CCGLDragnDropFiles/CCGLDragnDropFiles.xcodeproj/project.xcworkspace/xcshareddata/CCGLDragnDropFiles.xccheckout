@@ -10,29 +10,29 @@
 	<string>CCGLDragnDropFiles</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CCB3F37E-FA34-4C7C-8920-342EE86974B5</key>
+		<key>E709C02DFDD40B16E95CA7FC746AF6C4FF3C6EB9</key>
 		<string>https://github.com/smallab/CCGL.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CCGLDragnDropFiles/CCGLDragnDropFiles.xcodeproj/project.xcworkspace</string>
+	<string>CCGLDragnDropFiles/CCGLDragnDropFiles.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CCB3F37E-FA34-4C7C-8920-342EE86974B5</key>
+		<key>E709C02DFDD40B16E95CA7FC746AF6C4FF3C6EB9</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/smallab/CCGL.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CCB3F37E-FA34-4C7C-8920-342EE86974B5</string>
+	<string>E709C02DFDD40B16E95CA7FC746AF6C4FF3C6EB9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CCB3F37E-FA34-4C7C-8920-342EE86974B5</string>
+			<string>E709C02DFDD40B16E95CA7FC746AF6C4FF3C6EB9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CCGL</string>
 		</dict>

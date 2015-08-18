@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5C24EF0A-74DA-417C-8C7D-AC683BA9BFF4</string>
+	<string>848875A6-C88F-407A-90B3-6DA8CE21752E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CCGLFullScreen</string>
+	<string>CCGLPicking3D</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E709C02DFDD40B16E95CA7FC746AF6C4FF3C6EB9</key>
 		<string>https://github.com/smallab/CCGL.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CCGLFullScreen/CCGLFullScreen.xcodeproj</string>
+	<string>CCGLPicking3D/CCGLPicking3D.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E709C02DFDD40B16E95CA7FC746AF6C4FF3C6EB9</key>
